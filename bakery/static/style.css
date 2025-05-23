@@ -1,0 +1,93 @@
+/* monda-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Monda';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/monda-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* monda-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Monda';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/monda-v16-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  font-family: "Prompt", sans-serif;
+  background: #fffdf8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e4c9b0;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #f5e8dc;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #5c3d2e;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #8a5c3c;
+  border-bottom: 2px solid #f0d9c5;
+  padding-bottom: 8px;
+}
+
+footer {
+  background-color: #e4c9b0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.gallery div {
+  text-align: center;
+}
+
+.gallery p {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #5c3d2e;
+}

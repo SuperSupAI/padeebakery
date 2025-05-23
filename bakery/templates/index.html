@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PADEE Bakery</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+  
+
+  <nav style="display: flex; align-items: center; padding: 10px;">
+  <img src="{% static 'images/logo.png' %}" alt="Logo" style="height: 50px; margin-right: 20px;">
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;"><a href="#concept">แนวคิดของร้าน</a>
+    <a href="#lineup">เมนูขนมปัง</a>
+    <a href="#hours">เวลาทำการ</a>
+    <a href="#access">การเข้าถึง</a>
+    <a href="#recruit">ร่วมงานกับเรา</a>
+  </div>
+</nav>
+
+
+<section style="position: relative; overflow: hidden; height: 70vh;">
+  <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+    <source src="{% static 'video.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+              display: flex; justify-content: center; align-items: center;
+              flex-direction: column; color: #fff; background: rgba(0,0,0,0.3);">
+    <h1 style="font-size: 3em; margin: 0;">PADEE BAKERY</h1>
+    <p style="font-size: 1.2em;">ขนมปังอบสดใหม่ หอมกรุ่นทุกวัน</p>
+  </div>
+</section>
+
+
+
+  <main>
+    <section id="concept">
+      <h2>แนวคิดของร้าน</h2>
+      <p>เราตั้งใจอบขนมปังสดใหม่จากวัตถุดิบธรรมชาติ ใช้แป้งข้าวหอมมะลิ และกลิ่นหอมจากดอกไม้ไทย ผสมผสานความอ่อนโยนและสุขภาพ</p>
+    </section>
+
+    
+
+<section id="lineup">
+  <h2>เมนูขนมปัง</h2>
+  <div class="gallery">
+    <div><img src="{% static 'images/bread1_clean.png' %}" alt="ขนมปังอัลมอนด์"/><p>ขนมปังอัลมอนด์</p></div>
+    <div><img src="{% static 'images/bread2_clean.png' %}" alt="ขนมปังหมูหยองราดซอส"/><p>ขนมปังหมูหยองราดซอส</p></div>
+    <div><img src="{% static 'images/bread3_clean.png' %}" alt="ขนมปังไส้กรอกแดง"/><p>ขนมปังไส้กรอกแดง</p></div>
+    <div><img src="{% static 'images/bread4_clean.png' %}" alt="ขนมปังไส้กรอกแดงซอส"/><p>ขนมปังไส้กรอกแดงซอส</p></div>
+    <div><img src="{% static 'images/bread5_clean.png' %}" alt="ขนมปังพิซซ่า"/><p>ขนมปังพิซซ่า</p></div>
+  </div>
+</section>
+
+
+
+    <section id="hours">
+      <h2>เวลาทำการ</h2>
+      <p>เปิดทุกวันอังคาร - อาทิตย์ เวลา 08:00 - 16:00 น.</p>
+    </section>
+
+    <section id="access">
+      <h2>การเข้าถึง</h2>
+      <p>ซอยวัดด่านสำโรง สมุทรปราการ<br>มีที่จอดรถหน้าร้าน และใกล้ BTS แบริ่ง</p>
+    </section>
+
+    <section id="recruit">
+      <h2>ร่วมงานกับเรา</h2>
+      <p>หากคุณรักการอบขนม สนใจร่วมเป็นทีมกับเรา กรุณาติดต่อ Line: @padeebakery</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PADEE BAKERY</p>
+  </footer>
+</body>
+</html>
