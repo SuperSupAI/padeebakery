@@ -11,8 +11,8 @@ import os,sys,site
 
 from django.core.wsgi import get_wsgi_application
 
-sys.path.append('D:/Python/projects/padeebakery')
-sys.path.append('D:/Python/projects/padeebakery/padeebakery')
+#sys.path.append('D:/Python/projects/padeebakery')
+#sys.path.append('D:/Python/projects/padeebakery/padeebakery')
 os.environ["DJANGO_SETTINGS_MODULE"] =  'padeebakery.settings'
 
 application = get_wsgi_application()
