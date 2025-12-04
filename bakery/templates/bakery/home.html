@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padee Bakery</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="site-header">
+
+    <div class="site-header-item">
+        <span>Home </span>
+    </div>
+    <div class="site-header-item">
+        <a href="#products"><span>Line Up</span></a>
+    </div>
+    <div class="site-header-item">
+        <a href="#Opening-hours"><span>Opening hours</span></a>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>Welcome to Padee Bakery</h1>
+        <p>Fresh, delicious, and handcrafted pastries</p>
+      <!-- <a href="#products" class="btn">Explore Our Products</a>--> 
+    </div>
+</section>
+
+<!-- Bakery Items Section -->
+<section id="products">
+    <h2>Our Delicious Bakery Items</h2>
+    <div class="product-grid">
+        {% for item in bakery_items %}
+        <div class="product-card">
+            <img src="{{ item.image.url }}" alt="{{ item.name }}">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <p class="price">${{ item.price }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Bakery Items Section -->
+<section id="Opening-hours">
+    <div class="opening-hours">
+        <h2>Business days and business hours</h2>
+        
+            <p>Monday 11:00 - 18:00</p>
+            <p>Tuesday 11:00 - 18:00</p>
+            <p>Wednesday 11:00 - 18:00</p>
+            <p>Thursday 11:00 - 18:00</p>
+            <p>Friday 11:00 - 18:00</p>
+            <p>Saturday 11:00 - 18:00</p>
+            <p>Sunday 11:00 - 18:00</p>
+
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2025 Padee Bakery | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

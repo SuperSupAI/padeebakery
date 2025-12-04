@@ -1,0 +1,46 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #FDF8F3; /* Creamy background */
+}
+.bread-texture {
+    background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+}
+.selection-card.active {
+    border-color: #D97706; /* Amber-600 */
+    background-color: #FFFBEB; /* Amber-50 */
+    box-shadow: 0 4px 6px -1px rgba(217, 119, 6, 0.1), 0 2px 4px -1px rgba(217, 119, 6, 0.06);
+}
+.selection-card:hover {
+    transform: translateY(-2px);
+}
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/* Animation for icons appearing */
+.icon-pop {
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+/* Floating animation for toppings */
+.float-slow {
+    animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0px); }
+}

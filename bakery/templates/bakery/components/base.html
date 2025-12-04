@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{% block site_title %} Padee Bakery - ออกแบบขนมปังในสไตล์คุณ {% endblock %}</title> 
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/builder_logic.js' %}"></script>
+</head>
+
+<body>
+    
+    {% include 'bakery/components/site_header.html' %}
+    {% block content %}
+    {% endblock %}
+    {% block scripts %}{% endblock %}
+    {% include 'bakery/components/site_footer.html' %}
+
+</body>
+</html>
