@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bakery',
+    'tailwind',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +131,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import os
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
+#STATICFILES_DIRS = [
+#    os.path.join(BASE_DIR, "static"), # อาจจะไม่จำเป็นถ้าใช้ app static
+#]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

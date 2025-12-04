@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import BakeryItem
+#from .models import BakeryItem
 
-admin.site.register(BakeryItem)
+#admin.site.register(BakeryItem)
